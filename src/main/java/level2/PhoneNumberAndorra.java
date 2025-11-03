@@ -1,6 +1,6 @@
 package level2;
 
-public class AndorraPhoneNumber implements PhoneNumber {
+public class PhoneNumberAndorra implements PhoneNumber {
 
     @Override
     public String generatePhoneNumber(String number) {
