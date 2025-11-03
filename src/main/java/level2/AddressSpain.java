@@ -4,6 +4,6 @@ public class AddressSpain implements Address {
 
     @Override
     public String generateAddress(String street, int number, String city, String postcode) {
-        return street + ", " + number + ", " + postcode + " " + city;
+        return street + ", " + number + ", " + postcode + " " + city + ", Spain";
     }
 }
