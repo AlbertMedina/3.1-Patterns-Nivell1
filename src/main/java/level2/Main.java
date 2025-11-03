@@ -3,19 +3,13 @@ package level2;
 public class Main {
     public static void main(String[] args) {
 
-        String country = "portugal   ";
-        ContactFactory contactFactory = switch (country.trim().toLowerCase()) {
-            case "spain" -> new ContactFactorySpain();
-            case "andorra" -> new ContactFactoryAndorra();
-            case "portugal" -> new ContactFactoryPortugal();
-            default -> throw new IllegalArgumentException("Invalid country");
-        };
+        ContactsRepository contactsRepository = new ContactsRepository();
+        ContactsService contactsService = new ContactsService(contactsRepository);
 
-        String name = "Albert";
-        String address = contactFactory.getAddress().generateAddress("Street A", 100, "Barcelona", "08009");
-        String phoneNumber = contactFactory.getPhoneNumber().generatePhoneNumber("666666666");
-        Contact contact = new Contact(name, address, phoneNumber);
+        contactsService.addContact("Albert", "Spain", "Carrer de Girona", 100, "Barcelona", "08009", "612345789");
+        contactsService.addContact("Marc", "Andorra", "Avinguda Meritxell", 50, "Andorra La Vella", "AD500", "698754321");
+        contactsService.addContact("Albert", "Portugal", "Rua da Madeira", 200, "Oporto", "4000-069", "612345789");
 
-        System.out.println(contact);
+        contactsService.showContacts();
     }
 }
