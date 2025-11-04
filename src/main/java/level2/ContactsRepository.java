@@ -13,7 +13,7 @@ public class ContactsRepository {
     }
 
     public List<Contact> getContacts() {
-        return contacts;
+        return List.copyOf(contacts);
     }
 
     public void addContact(Contact contact) {
