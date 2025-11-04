@@ -1,4 +1,6 @@
-package level2;
+package level2.factory.countries.spain;
+
+import level2.factory.interfaces.Address;
 
 public class AddressSpain implements Address {
 

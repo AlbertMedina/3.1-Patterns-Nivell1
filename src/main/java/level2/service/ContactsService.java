@@ -1,4 +1,9 @@
-package level2;
+package level2.service;
+
+import level2.factory.countries.andorra.ContactFactoryAndorra;
+import level2.factory.interfaces.ContactFactory;
+import level2.factory.countries.portugal.ContactFactoryPortugal;
+import level2.factory.countries.spain.ContactFactorySpain;
 
 public class ContactsService {
 
