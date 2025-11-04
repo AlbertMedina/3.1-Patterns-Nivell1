@@ -1,16 +1,10 @@
 package level3;
 
-public class Vehicle {
+public abstract class Vehicle {
+    
+    public abstract void start();
 
-    public void start() {
-        System.out.println("Vehicle starting");
-    }
+    public abstract void accelerate();
 
-    public void accelerate() {
-        System.out.println("Vehicle accelerating");
-    }
-
-    public void brake() {
-        System.out.println("Vehicle braking");
-    }
+    public abstract void brake();
 }
