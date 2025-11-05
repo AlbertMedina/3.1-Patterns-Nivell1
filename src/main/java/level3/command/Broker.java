@@ -5,7 +5,11 @@ import java.util.List;
 
 public class Broker {
 
-    private List<Order> orders = new ArrayList<>();
+    private final List<Order> orders = new ArrayList<>();
+
+    public List<Order> getOrders() {
+        return List.copyOf(orders);
+    }
 
     public void takeOrder(Order order) {
         orders.add(order);
