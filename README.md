@@ -32,3 +32,4 @@ Using Command pattern to perform  some actions for different vehicles.
 2. Locate the three packages (level1, level2, level3).
 3. Inside each package, locate and open the file "Main.java".
 4. Run each one from the IDE.
+5. Tests for each level can also be found in the test folder.
