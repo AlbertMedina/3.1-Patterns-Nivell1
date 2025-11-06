@@ -1,7 +1,7 @@
 # Patterns
 
 ## Description - Exercise statement
-Three levels of exercises to work design patterns.
+Three levels of exercises to work with design patterns.
 
 ### Level 1
 Using Singleton pattern to create an Undo class to manage command history from the console input.
